@@ -2,6 +2,31 @@
   color: pink;
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "RobotoLight";
+  src: url("fonts/Roboto-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "RobotoThin";
+  src: url("fonts/Roboto-Thin.ttf");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("fonts/SourceSansPro-SemiBold.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Barlow";
+  src: url("fonts/BarlowSemiCondensed-SemiBold.ttf");
+  font-weight: 500;
+}
 header.header nav {
   z-index: 9999;
   transition: ease-in-out 0.2s;
@@ -111,6 +136,10 @@ header.header .header-nav .burger-content .social-menu ul li a {
 }
 header.header .header-nav .burger-content .social-menu ul li a .fa {
   font-size: 1.857em;
+}
+
+.test-font h3 {
+  font-family: "Roboto";
 }
 
 /*# sourceMappingURL=yourtheme.css.map */

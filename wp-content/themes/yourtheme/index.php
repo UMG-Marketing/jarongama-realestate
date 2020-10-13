@@ -10,6 +10,8 @@
 
 			<?php get_template_part('pagination'); ?>
 
+			<?php get_template_part('template-parts/testfont'); ?>
+
 		</section>
 		<!-- /section -->
 	</main>
