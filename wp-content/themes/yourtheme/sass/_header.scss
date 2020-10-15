@@ -2,15 +2,17 @@ header.header {
     nav {
         z-index: 9999;
         transition: ease-in-out 0.2s;
+        height: 69px;
+        background-color: $primary;
 
         &.scrolled {
-            background: #fff;
+            background: $primary;
             -webkit-box-shadow: 0 3px 18px -5px rgba(0,0,0,.1), 0 3px 7px -5px rgba(0,0,0,.05);
             box-shadow: 0 3px 18px -5px rgba(0,0,0,.1), 0 3px 7px -5px rgba(0,0,0,.05);
         }
 
         &.burger-opened {
-            background: rgba(255,255,255, 0.7);
+            background: rgba(111,112,96, 0.7);
         }
 
         // .d-flex {
@@ -96,8 +98,7 @@ header.header {
             position: absolute;
             height: 4px;
             width: 100%;
-            background: black;
-            // border-radius: 9px;
+            background: #fff;
             margin-left: auto;
             opacity: 1;
             left: 0;
@@ -159,51 +160,50 @@ header.header {
     //     }
     // }
 
-    .header-nav {
-        .burger-content {
-            background: rgba(255,255,255, 0.7);
-            padding: 72px 0;
-            position: absolute;
-            right: -100vw;
-            transition: ease-out .2s;
-            height: auto; //remove once burger content has content
-    
-            &.burger-opened {
-                right: 0;
-                // left: 0;
-                transition: ease-in .1s;
-            }
-    
-            .menu-item {
+    .burger-content {
+        background: rgba(111,112,96, 0.7);
+        padding: 72px 0;
+        position: absolute;
+        right: -100vw;
+        top: 69px;
+        transition: ease-out .2s;
+        height: auto; //remove once burger content has content
+
+        &.burger-opened {
+            right: 0;
+            // left: 0;
+            transition: ease-in .1s;
+        }
+
+        .menu-item {
+            display: block;
+
+            a {
+                color: black;
                 display: block;
-    
+                text-transform: uppercase;
+                font-size: 1.857em;
+                font-weight: bold;
+                padding: 6px 0;
+            }
+
+            &:last-of-type {
                 a {
-                    color: black;
-                    display: block;
-                    text-transform: uppercase;
-                    font-size: 1.857em;
-                    font-weight: bold;
-                    padding: 6px 0;
-                }
-    
-                &:last-of-type {
-                    a {
-                        padding-bottom: 0;
-                    }
+                    padding-bottom: 0;
                 }
             }
-    
-            .social-menu {
-                margin-top: 32px;
-    
-                ul {
-                    li {
-                        a {
-                            padding: 0 18px;
-    
-                            .fa {
-                                font-size: 1.857em;
-                            }
+        }
+
+        .social-menu {
+            margin-top: 32px;
+
+            ul {
+                li {
+                    a {
+                        padding: 0 18px;
+
+                        .fa {
+                            font-size: 1.857em;
                         }
                     }
                 }
