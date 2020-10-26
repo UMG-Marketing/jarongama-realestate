@@ -8,6 +8,8 @@
 		<?php get_template_part('pagination'); ?>
 
 		<?php get_template_part('template-parts/home/nblinks'); ?>
+
+		<?php get_template_part('template-parts/home/work-with-us'); ?>
 	</main>
 
 
