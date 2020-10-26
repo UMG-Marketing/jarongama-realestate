@@ -1,3 +1,37 @@
+.container {
+  padding: 0 !important;
+  max-width: 100% !important;
+}
+@media screen and (min-width: 1201px) {
+  .container {
+    max-width: 1440px !important;
+  }
+}
+
+ul, ol {
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: #fff !important;
+}
+a:hover {
+  color: #fff !important;
+}
+
+@media screen and (max-width: 991px) {
+  section {
+    padding: 0 23px;
+  }
+}
+
 @font-face {
   font-family: "Roboto";
   src: url("fonts/Roboto-Regular.ttf");
@@ -20,7 +54,7 @@
 }
 @font-face {
   font-family: "Barlow";
-  src: url("fonts/BarlowSemiCondensed-SemiBold.ttf");
+  src: url("fonts/BarlowSemiCondensed-Bold.ttf");
   font-weight: 500;
 }
 header.header nav {
@@ -149,7 +183,7 @@ header.header .burger-content .social-menu ul li a .fa {
 
 .footer {
   background: #6f7060;
-  padding: 60px 0;
+  padding: 48px 0;
 }
 .footer .w-100 {
   margin-bottom: 46px;
@@ -218,6 +252,9 @@ header.header .burger-content .social-menu ul li a .fa {
     margin-bottom: 20px;
   }
 }
+.footer .info h3:nth-of-type(4) {
+  line-height: 1.3rem;
+}
 .footer .sitemap {
   text-transform: uppercase;
 }
@@ -233,32 +270,208 @@ header.header .burger-content .social-menu ul li a .fa {
   letter-spacing: 0.25rem;
 }
 
-.container {
-  padding: 0 !important;
-  max-width: 100% !important;
+.nblinks {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
-@media screen and (min-width: 1201px) {
-  .container {
+@media screen and (min-width: 992px) {
+  .nblinks {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1201px) and (max-width: 1560px) {
+  .nblinks .container {
+    max-width: 100% !important;
+  }
+}
+@media screen and (min-width: 1561px) {
+  .nblinks .container {
     max-width: 1440px !important;
   }
 }
-
-ul, ol {
+.nblinks a {
+  display: block;
+  height: 270px;
+  background: url("img/home/nblink1--bg.jpg");
+  background-size: cover;
+  margin: 0 0 17px 0;
+  padding: 0;
+}
+.nblinks a:hover {
+  cursor: pointer;
+}
+.nblinks a:hover div {
+  background: #6F705e;
+  -webkit-transition: background-color ease-in 0.2s;
+  -ms-transition: background-color ease-in 0.2s;
+  transition: background-color ease-in 0.2s;
+}
+.nblinks a:hover div p {
+  color: #ffbd69;
+  -webkit-transition: ease-in 0.2s;
+  -ms-transition: ease-in 0.2s;
+  transition: ease-in 0.2s;
+}
+.nblinks a:first-of-type p {
+  left: 10px;
+}
+@media screen and (max-width: 767px) {
+  .nblinks a:first-of-type p {
+    left: -10px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .nblinks a:first-of-type p {
+    left: -5px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1559px) {
+  .nblinks a:first-of-type p {
+    left: 1px;
+  }
+}
+@media screen and (min-width: 1560px) {
+  .nblinks a:first-of-type p {
+    left: 13px;
+  }
+}
+.nblinks a:nth-of-type(2) {
+  background: url("img/home/nblink2--bg.jpg");
+  background-size: cover;
+}
+.nblinks a:nth-of-type(2):hover div {
+  background: #fff;
+}
+.nblinks a:nth-of-type(2):hover div p {
+  color: #6F705e;
+}
+.nblinks a:nth-of-type(2) div {
+  border: 1px solid #fff;
+}
+.nblinks a:nth-of-type(2) div p {
+  color: #fff;
+  left: -47px;
+}
+@media screen and (max-width: 767px) {
+  .nblinks a:nth-of-type(2) div p {
+    left: -85px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .nblinks a:nth-of-type(2) div p {
+    left: -100px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1559px) {
+  .nblinks a:nth-of-type(2) div p {
+    left: -62px;
+  }
+}
+@media screen and (min-width: 1560px) {
+  .nblinks a:nth-of-type(2) div p {
+    left: -73px;
+  }
+}
+.nblinks a:nth-of-type(3) {
+  background: url("img/home/nblink3--bg.jpg");
+  background-size: cover;
   margin: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-inline-start: 0;
 }
-
-ul {
-  list-style-type: none;
+@media screen and (min-width: 992px) {
+  .nblinks a:nth-of-type(3) {
+    margin-right: 0;
+  }
 }
-
-a {
-  color: #fff !important;
+.nblinks a:nth-of-type(3) p {
+  left: -20px;
 }
-a:hover {
-  color: #fff !important;
+@media screen and (max-width: 767px) {
+  .nblinks a:nth-of-type(3) p {
+    left: -48px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .nblinks a:nth-of-type(3) p {
+    left: -45px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1559px) {
+  .nblinks a:nth-of-type(3) p {
+    left: -27px;
+  }
+}
+@media screen and (min-width: 1560px) {
+  .nblinks a:nth-of-type(3) p {
+    left: -29px;
+  }
+}
+@media screen and (min-width: 541px) and (max-width: 991px) {
+  .nblinks a {
+    height: 350px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .nblinks a {
+    height: 335px;
+  }
+}
+@media screen and (min-width: 1601px) {
+  .nblinks a {
+    margin-right: 16px;
+  }
+}
+.nblinks a div {
+  border: 1px solid #6F705e;
+  color: #6F705e;
+  width: 176px;
+  height: 69px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .nblinks a div {
+    width: 260px;
+    height: 89px;
+  }
+}
+@media screen and (min-width: 1560px) {
+  .nblinks a div {
+    width: 260px;
+    height: 89px;
+  }
+}
+.nblinks a div p {
+  bottom: 0;
+  top: 11.5px;
+  color: #6F705e;
+  font-family: "Barlow", "HelveticaNeue", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+  margin: 0;
+  white-space: nowrap;
+}
+@media screen and (min-width: 414px) and (max-width: 767px) {
+  .nblinks a div p {
+    font-size: 2.2rem;
+    top: 7px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .nblinks a div p {
+    font-size: 3rem;
+    top: 7px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1559px) {
+  .nblinks a div p {
+    font-size: 1.9rem;
+    top: 11.4px;
+  }
+}
+@media screen and (min-width: 1560px) {
+  .nblinks a div p {
+    font-size: 2.6rem;
+  }
 }
 
 /*# sourceMappingURL=yourtheme.css.map */

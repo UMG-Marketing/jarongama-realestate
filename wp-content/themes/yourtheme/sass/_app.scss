@@ -25,3 +25,9 @@ a {
         color: #fff!important;
     }
 }
+
+section {
+    @media screen and (max-width: 991px) {
+        padding: 0 23px;
+    }
+}
