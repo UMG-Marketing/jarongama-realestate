@@ -10,6 +10,7 @@
     "grunt-contrib-watch": "^1.0.0"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
     "bootstrap": "^4.5.2",
     "grunt-contrib-concat": "^1.0.1",
     "jquery": "^3.5.1",

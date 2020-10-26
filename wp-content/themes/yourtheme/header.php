@@ -30,12 +30,18 @@
 
 				<nav class="header-nav position-fixed w-100" role="navigation">
 
-					<div class="container">
-						<div class="d-flex align-items-center w-100">
+					<div class="container h-100 w-100">
+						<div class="d-flex align-items-center w-100 h-100 position-relative">
 
 
 						<!-- mobile -->
-							<div class="ml-auto d-md-none">
+
+							<div class="mr-auto h-100">
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/jaron.png" class="jaron-logo position-absolute mx-auto" alt="Jaron Gama Real Estate Specialist">
+								</a>
+							</div>
+							<div class="ml-auto d-md-none align-self-center">
 								<?php get_template_part('template-parts/burgermenu'); ?>
 							</div>
 						<!-- /end mobile -->

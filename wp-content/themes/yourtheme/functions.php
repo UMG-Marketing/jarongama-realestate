@@ -100,6 +100,9 @@ function html5blank_header_scripts()
 
         wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('html5blankscripts'); // Enqueue it!
+
+        wp_register_style('fontawesomejs', '/node_modules/@fortawesome/fontawesome-free/js/all.js');
+        wp_enqueue_script('fontawesomejs'); // Enqueue it!
     }
 }
 
@@ -123,6 +126,9 @@ function html5blank_styles()
 
     wp_register_style('bootstrap', '/node_modules/bootstrap/dist/css/bootstrap.min.css');
     wp_enqueue_style('bootstrap'); // Enqueue it!
+
+    wp_register_style('fontawesome', '/node_modules/@fortawesome/fontawesome-free/css/all.css');
+    wp_enqueue_style('fontawesome'); // Enqueue it!
 }
 
 // Register HTML5 Blank Navigation

@@ -37,10 +37,16 @@ header.header nav.scrolled {
 header.header nav.burger-opened {
   background: rgba(111, 112, 96, 0.7);
 }
+header.header nav .jaron-logo {
+  left: 0;
+  right: 0;
+  top: 9px;
+}
 header.header nav #nav-lines {
   width: 32px;
   height: 28px;
   position: relative;
+  right: 13px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -143,6 +149,7 @@ header.header .burger-content .social-menu ul li a .fa {
 
 .container {
   padding: 0 !important;
+  max-width: 100% !important;
 }
 
 /*# sourceMappingURL=yourtheme.css.map */

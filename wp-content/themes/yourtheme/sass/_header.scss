@@ -77,11 +77,19 @@ header.header {
         //     }
         // }
 
+        //mobile logo
+        .jaron-logo {
+            left: 0;
+            right: 0;
+            top: 9px;
+        }
+
         //burger menu
         #nav-lines {
             width: 32px;
             height: 28px;
             position: relative;
+            right: 13px;
             -webkit-transform: rotate(0deg);
             -moz-transform: rotate(0deg);
             -o-transform: rotate(0deg);
