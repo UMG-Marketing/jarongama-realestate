@@ -382,6 +382,73 @@ header.header .burger-content .social-menu ul li a .fa {
   font-size: 1.3rem;
 }
 
+.form-section h2 {
+  margin-bottom: 60px;
+  width: fit-content;
+}
+.form-section h2 div {
+  margin-bottom: -8px;
+}
+.form-section h2 div:nth-of-type(2) {
+  margin-bottom: 0;
+}
+.form-section h2 p {
+  color: #fff;
+  font-family: "BarlowSemiBold", "HelveticaNeue", sans-serif;
+  font-size: 3rem;
+  letter-spacing: -1.2px;
+  margin: 0;
+  white-space: nowrap;
+}
+@media screen and (min-width: 992px) {
+  .form-section h2 p {
+    font-size: 5.6rem;
+  }
+}
+.form-section h2 span {
+  display: block;
+  width: fit-content;
+}
+.form-section h2 span.mr-auto {
+  color: #fff;
+  font-family: "Barlow", "HelveticaNeue", sans-serif;
+  font-size: 1.1rem;
+}
+.form-section h2 span.mr-auto:after {
+  background-color: #ffbd69;
+  content: "";
+  display: inline-block;
+  margin-left: 6px;
+  width: 40px;
+  height: 5px;
+}
+@media screen and (min-width: 992px) {
+  .form-section h2 span.mr-auto {
+    font-size: 1.9rem;
+  }
+}
+.form-section h2 span.ml-auto {
+  color: #ffbd69;
+  font-family: "BarlowSemiBold", "HelveticaNeue", sans-serif;
+  font-size: 1.6rem;
+}
+.form-section h2 span.ml-auto:before {
+  background-color: #fdffda;
+  content: "";
+  display: inline-block;
+  margin-right: 7px;
+  width: 56%;
+  height: 3px;
+}
+@media screen and (min-width: 992px) {
+  .form-section h2 span.ml-auto {
+    font-size: 2.7rem;
+  }
+  .form-section h2 span.ml-auto:before {
+    width: 63%;
+  }
+}
+
 .nblinks {
   padding-top: 40px;
   padding-bottom: 40px;
