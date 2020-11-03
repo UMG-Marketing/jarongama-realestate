@@ -382,20 +382,38 @@ header.header .burger-content .social-menu ul li a .fa {
   font-size: 1.3rem;
 }
 
+.form-section {
+  background: url("img/home/ournetwork-bg.jpg");
+  background-size: cover;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 992px) {
+  .form-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 901px) {
+  .form-section .container {
+    max-width: 900px !important;
+  }
+}
 .form-section h2 {
-  margin-bottom: 60px;
+  margin-bottom: 35px;
   width: fit-content;
 }
 .form-section h2 div {
-  margin-bottom: -8px;
+  margin-bottom: -20px;
 }
 .form-section h2 div:nth-of-type(2) {
   margin-bottom: 0;
+  margin-top: -10px;
 }
 .form-section h2 p {
-  color: #fff;
+  color: #6F705e;
   font-family: "BarlowSemiBold", "HelveticaNeue", sans-serif;
-  font-size: 3rem;
+  font-size: 4.8rem;
   letter-spacing: -1.2px;
   margin: 0;
   white-space: nowrap;
@@ -410,7 +428,7 @@ header.header .burger-content .social-menu ul li a .fa {
   width: fit-content;
 }
 .form-section h2 span.mr-auto {
-  color: #fff;
+  color: #6F705e;
   font-family: "Barlow", "HelveticaNeue", sans-serif;
   font-size: 1.1rem;
 }
@@ -430,10 +448,10 @@ header.header .burger-content .social-menu ul li a .fa {
 .form-section h2 span.ml-auto {
   color: #ffbd69;
   font-family: "BarlowSemiBold", "HelveticaNeue", sans-serif;
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 .form-section h2 span.ml-auto:before {
-  background-color: #fdffda;
+  background-color: #E5E5E5;
   content: "";
   display: inline-block;
   margin-right: 7px;
@@ -446,6 +464,64 @@ header.header .burger-content .social-menu ul li a .fa {
   }
   .form-section h2 span.ml-auto:before {
     width: 63%;
+  }
+}
+.form-section h3 {
+  font-family: "RobotoLight", "HelveticaNeue", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+}
+.form-section form input, .form-section form textarea {
+  color: #6F705e;
+  font-family: "Roboto", "HelveticaNeue", sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  border: 0;
+  border-bottom: 2px solid #000;
+  background: transparent;
+  padding: 23px 0;
+}
+.form-section form input[name=user_name], .form-section form textarea[name=user_name] {
+  margin-right: 40px;
+}
+.form-section form textarea:focus {
+  outline: none;
+}
+.form-section form button {
+  margin-top: 70px;
+  font-family: "Roboto", "HelveticaNeue", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1.1px;
+  color: #6F705e;
+  background: transparent;
+  border: 2px solid #6F705e;
+  width: 58%;
+  padding: 18px 0;
+}
+.form-section form button:hover {
+  background: #6F705e;
+  color: #fff;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+.form-section form button:before {
+  content: "";
+  width: 74px;
+  height: 2px;
+  background: #6F705e;
+  position: absolute;
+  left: -44px;
+}
+@media screen and (min-width: 541px) and (max-width: 767px) {
+  .form-section form button {
+    width: 42%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .form-section form button {
+    width: 35%;
   }
 }
 

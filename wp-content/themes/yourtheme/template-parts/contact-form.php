@@ -1,18 +1,14 @@
 <div class="cta-row w-100 text-center">
     <div class="form">
         <form class="w-100 position-relative" name="contactpage-form">
-            <div class="row">
-                <div class="col">
-                    <input type="text" id="username" name="user_name" placeholder="Name" class="w-100"/>
-                </div>
-                <div class="col">
-                    <input type="email" id="contactemail" name="email_address" placeholder="Email Address" class="w-100"/>
-                </div>
+            <div class="d-md-flex">
+                <input type="text" id="username" name="user_name" placeholder="Name" class="w-100 md-w-50"/>
+                <input type="email" id="contactemail" name="email_address" placeholder="Email Address" class="w-100 md-w-50"/>
             </div>
             <textarea id="usermessage" name="user_message" placeholder="Message" class="w-100"></textarea>
             <span class="text-center d-none" id="error-message">Please don't leave any field blank.</span>
             <span class="text-center d-none" id="success-message">Thank you! We will get in touch with you shortly.</span>
-            <button type="submit" id="submit-form" class="cta mx-auto">
+            <button type="submit" id="submit-form" class="cta mx-auto d-flex justify-content-center align-items-center position-relative">
                 SUBMIT
             </button>
         </form>
