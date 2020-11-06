@@ -1,6 +1,6 @@
-<section class="home-team">
+<section class="home-team position-relative">
     <div class="container">
-        <a href="">
+        <a href="" class="d-lg-flex justify-content-center">
             <h2 class="mx-auto d-flex-col d-table">
                 <div class="align-items-center">
                     <span class="mr-auto d-flex align-items-center">03</span>

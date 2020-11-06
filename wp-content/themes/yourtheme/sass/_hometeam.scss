@@ -1,15 +1,60 @@
 .home-team {
     padding: 0;
-    padding-top: 55px;
-    padding-bottom: 50px;
+    padding-top: 35px;
+
+    @media screen and (min-width: 992px) {
+        padding-top: 0;
+    }
+
+    .container {
+        max-width: 100%!important;
+    }
 
     a {
         display: block;
     }
 
     h2 {
+        background: #fff;
         margin-bottom: 35px;
         width: fit-content;
+
+        &:before {
+            content: '';
+            background: #d3d3d3;
+            display: inline-block;
+            width: 60vw;
+            height: 5px;
+            position: absolute;
+            left: -52vw;
+            top: 46%;
+
+            @media screen and (min-width: 1921px) {
+                display: none;
+            }
+
+            @media screen and (min-width: 1600px) and (max-width: 1920px) {
+                left: -50vw;
+            }
+
+            @media screen and (min-width: 1201px) and (max-width: 1600px) {
+                left: -51.5vw;
+            }
+        }
+
+        @media screen and (min-width: 1441px) {
+            padding: 60px 160px;
+            top: -163px;
+        }
+
+        @media screen and (min-width: 992px) and (max-width: 1440px) {
+            padding: 33px 99px;
+            top: -42px;
+        }
+
+        @media screen and (min-width: 992px) {
+            position: absolute;
+        }
 
         div {
             margin-bottom: -20px;
@@ -35,7 +80,7 @@
 
         span {
             display: block;
-            width: fit-content;
+            width: 190px;
 
             &.mr-auto {
                 color: $quaternary;
@@ -85,6 +130,18 @@
         background: url('img/home/theteam--mobile.jpg');
         background-size: cover;
         min-height: 216px;
+
+        @media screen and (min-width: 992px) {
+            background: url('img/home/theteam.jpg');
+            background-size: cover;
+            background-position: 15% 0;
+            min-height: 997px;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+            min-height: 555px;
+            background-position: 24% 0;
+        }
 
         @media screen and (min-width: 541px) and (max-width: 767px) {
             min-height: 343px;
